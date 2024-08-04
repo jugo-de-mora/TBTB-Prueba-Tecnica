@@ -42,7 +42,7 @@ Consideraciones:
      Razón por la cual se crearon dos excepciones presentes en la carpeta Exceptions.
 
 # Parte III
-En la carpeta Parte III API Usuarios se encuentra presente un archivo index.html que recupera datos de una API de usuarios de prueba y los despliega.
+En la carpeta Registered Users se encuentra presente un archivo index.html que recupera datos de una API de usuarios de prueba y los despliega.
 La página se visualiza de la siguiente manera.
 
 ![image](https://github.com/user-attachments/assets/e3b5254e-1e91-4c7c-afb8-5e915ab81683)
