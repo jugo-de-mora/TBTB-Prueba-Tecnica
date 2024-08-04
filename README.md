@@ -44,6 +44,7 @@ Consideraciones:
 # Parte III
 En la carpeta Parte III API Usuarios se encuentra presente un archivo index.html que recupera datos de una API de usuarios de prueba y los despliega.
 La página se visualiza de la siguiente manera.
+
 ![image](https://github.com/user-attachments/assets/e3b5254e-1e91-4c7c-afb8-5e915ab81683)
 ![image](https://github.com/user-attachments/assets/51604ab9-c7fb-40fd-a3af-12b839acebe2)
 
