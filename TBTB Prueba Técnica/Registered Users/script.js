@@ -1,3 +1,9 @@
+/**
+ * Este método toma la url de la API para capturar los datos.
+ *
+ * @param {string} url - Enlace de la API a consumir.
+ * @returns {object} Respuesta con todos los datos.
+ */
 async function fetchData(url) {
    try {
       const response = await fetch(url);
@@ -10,6 +16,11 @@ async function fetchData(url) {
    }
 }
 
+/**
+ * Crea una tabla con los datos presentes en data.
+ *
+ * @param {object} data - Datos a insertar en la tabla.
+ */
 function createTable(data) {
    const main_container = document.getElementById("insertTable"),
       div = document.createElement("div"),
@@ -65,7 +76,12 @@ function createTable(data) {
    main_container.appendChild(div)
 }
 
-function addFilterTable() {
+/**
+ * Filtro de datos creado con JQuery para habiltar únicamente el elemento que contenga el mismo texto presente en el input #inputTable.
+ *
+ */
+
+function filterTable() {
    $(document).ready(function () {
       $("#inputTable").on("keyup", function () {
          var value = $(this).val().toLowerCase();
@@ -75,6 +91,12 @@ function addFilterTable() {
       });
    });
 }
+
+/**
+ * Crea elementos Cards con los datos presentes en data.
+ *
+ * @param {object} data - Datos a insertar en forma de Cards.
+ */
 
 function createCards(data) {
    for (let i = 0; i < data.length; i++) {
@@ -124,7 +146,12 @@ function createCards(data) {
    }
 }
 
-function addFilterCards() {
+/**
+ * Filtro de datos creado con JQuery para habiltar únicamente el elemento que contenga el mismo texto presente en el input #inputCards.
+ *
+ */
+
+function filterCards() {
    $(document).ready(function () {
       $("#inputCards").on("keyup", function () {
          var value = $(this).val().toLowerCase();
@@ -135,6 +162,11 @@ function addFilterCards() {
    });
 }
 
+/**
+ * Método principal que hace uso de la url otorgada para el ejercicio, cuando los datos se obtienen se crea la tabla y los elementos Cards.
+ *
+ */
+
 async function main() {
    const url = 'https://jsonplaceholder.typicode.com/users';
    const data = await fetchData(url);
@@ -143,8 +175,8 @@ async function main() {
       createTable(data)
       createCards(data)
    }
-   addFilterTable()
-   addFilterCards()
+   filterTable()
+   filterCards()
 }
 
 main()
