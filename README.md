@@ -42,7 +42,7 @@ Consideraciones:
      Razón por la cual se crearon dos excepciones presentes en la carpeta Exceptions.
 
 # Parte III
-En la carpeta Registered Users se encuentra presente un archivo index.html que recupera datos de una API de usuarios de prueba y los despliega.
+En la carpeta Registered Users se encuentran dos carpetas: Plain JS y React. Ambas carpetas representan el mismo resultado de una API de usuarios de prueba y los despliega., la diferencia es en que el archivo index.html dentro de Plain JS no require de un servidor web y por otro lado el proyecto dentro de React tiene debe ser ejecutado con un servidor web. Para ejecutar el React las librerias necesarias ya deberían estar incluidas en el repositorio así que debería bastar con ejecutar <code>npm start</code>.
 La página se visualiza de la siguiente manera.
 
 ![image](https://github.com/user-attachments/assets/e3b5254e-1e91-4c7c-afb8-5e915ab81683)
